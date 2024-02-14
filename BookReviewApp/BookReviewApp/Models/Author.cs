@@ -7,4 +7,5 @@ public class Author
 
     public string Publisher {get; set; }
     public Country Country { get; set; }
+    public ICollection<BookAuthor> BookAuthors { get; set; }
 }
