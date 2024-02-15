@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookReviewApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a11556cbc7277026bd5dd0d37705813912a82726")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e27c4e8a6e01d417aa24ed4db31460ff92f4ff2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookReviewApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookReviewApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
