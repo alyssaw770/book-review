@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Components.RenderTree;
+﻿using BookReviewApp.Inerfaces;
+using BookReviewApp.Repository;
+using Microsoft.AspNetCore.Components.RenderTree;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookReviewApp;
@@ -14,6 +16,7 @@ public class Program
         builder.Services.AddControllers();
         //add injection at the beginning -> transient
         builder.Services.AddTransient<Seed>();
+        builder.Services.AddScoped<IBookRepository, BookRepository>();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
