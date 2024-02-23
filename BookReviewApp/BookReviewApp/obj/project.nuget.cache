@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "RYgoRamdQMYS4HVhn3m8SaR3V6KOnNOMr0NK6/nhbzE9VxFcNKUXs+0PgyCQnaG4s5XLZux6xcIvQ3sm0XMJjw==",
+  "dgSpecHash": "P7sOy2FmitRR3syIHneVcO9z6rP3EbsjEmv0EXi2EfmPDwNGn8+bKmVZkh+R6yXN/Wov+w7jfLbvPD/k82n5/g==",
   "success": true,
   "projectFilePath": "/Users/alyssawilliams/C#_Projects/book-review/BookReviewApp/BookReviewApp/BookReviewApp.csproj",
   "expectedPackageFiles": [
+    "/Users/alyssawilliams/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/Users/alyssawilliams/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/Users/alyssawilliams/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
-    "/Users/alyssawilliams/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/alyssawilliams/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/alyssawilliams/.nuget/packages/microsoft.data.sqlclient/2.1.4/microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "/Users/alyssawilliams/.nuget/packages/microsoft.data.sqlclient.sni.runtime/2.1.1/microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "/Users/alyssawilliams/.nuget/packages/microsoft.entityframeworkcore/6.0.14/microsoft.entityframeworkcore.6.0.14.nupkg.sha512",
