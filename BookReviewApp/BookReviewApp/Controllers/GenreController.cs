@@ -45,12 +45,12 @@ namespace BookReviewApp.Controllers
 
             return Ok(genre);
         }
-        [HttpGet("{book}/{genreId}")]
+        [HttpGet("book/{genreId}")]
         [ProducesResponseType(200, Type = typeof(IEnumerable<Book>))]
         [ProducesResponseType(400)]
-        public IActionResult GetBookByCategory(int genreid)
+        public IActionResult GetBookByCategory(int genreId)
         {
-            var books = _mapper.Map<List<BookDto>>(_genreRepository.GetBookByGenre(genreid));
+            var books = _mapper.Map<List<BookDto>>(_genreRepository.GetBookByGenre(genreId));
 
             if(!ModelState.IsValid)
                 return BadRequest();
