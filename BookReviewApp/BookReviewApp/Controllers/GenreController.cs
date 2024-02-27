@@ -19,15 +19,43 @@ namespace BookReviewApp.Controllers
         }
 
         [HttpGet]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<Book>))]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<Genre>))]
         public IActionResult GetGenres()
         {
+            //Make sure you add list => if not you will get an ambigious error
             var genres = _mapper.Map<List<GenreDto>>(_genreRepository.GetGenres());
 
             if(!ModelState.IsValid)
                 return BadRequest(ModelState);
 
             return Ok(genres);
+        }
+        [HttpGet("{genreId}")]
+        [ProducesResponseType(200, Type = typeof(Genre))]
+        [ProducesResponseType(400)]
+        public IActionResult GetGenre(int genreId)
+        {
+            if(!_genreRepository.GenreExists(genreId))
+                return NotFound();
+
+            var genre = _mapper.Map<GenreDto>(_genreRepository.GetGenre(genreId));
+
+            if(!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            return Ok(genre);
+        }
+        [HttpGet("{book}/{genreId}")]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<Book>))]
+        [ProducesResponseType(400)]
+        public IActionResult GetBookByCategory(int genreid)
+        {
+            var books = _mapper.Map<List<BookDto>>(_genreRepository.GetBookByGenre(genreid));
+
+            if(!ModelState.IsValid)
+                return BadRequest();
+
+            return Ok(books);
         }
     }
 }

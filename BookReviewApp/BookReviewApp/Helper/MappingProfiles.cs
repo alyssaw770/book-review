@@ -8,6 +8,8 @@ namespace BookReviewApp.Helper
         public MappingProfiles()
         {
             CreateMap<Book, BookDto>();
+            CreateMap<Genre, GenreDto>();
+            CreateMap<Country, CountryDto>();
         }
     }
 }

@@ -33,10 +33,11 @@ namespace BookReviewApp.Controllers
 
             return Ok(books);
         }
-//This returns 
+//This returns id
         [HttpGet("{bookId}")]
         [ProducesResponseType(200, Type = typeof(Book))]
         [ProducesResponseType(400)]
+        //maker sure parameter matches HttpGet parameter or API will not work
         public IActionResult GetBook(int bookId)
         {
             if(!_bookRepository.BookExists(bookId))
